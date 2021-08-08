@@ -12,9 +12,6 @@ import pathlib
 def read_file(file_name: str) -> str:
     here = pathlib.Path(__file__).parent.resolve()
     return (here / file_name).read_text(encoding='utf-8')
-    # with open(os.path.join(os.path.dirname(__file__), file_name)) as input_file:
-    #     data = input_file.read()
-    # return data
 
 
 setup(
